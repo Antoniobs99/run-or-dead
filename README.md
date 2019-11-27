@@ -33,7 +33,7 @@ primer_filtrado_IPC_DT<-setDT(primer_filtrado_IPC)
 primer_filtrado_VFC_DT<-setDT(primer_filtrado_VFC)
 ```
 ```{r}
-#Tercer filtrado, promedio mañor a 7, algunos bocenos de los calculos estadisticos utilizados para elegir arriba (o igual) a 7, los puse hasta abajo
+#Tercer filtrado, promedio mañor a 7, algunos bocetos de los calculos estadisticos utilizados para elegir arriba (o igual) a 7, los puse hasta abajo
 Expresion_Mayor7_IPC<-primer_filtrado_IPC_DT%>%
   filter(`promedio_senal <- mean(signal)`>=7)
 Expresion_Mayor7_VFC<-primer_filtrado_VFC_DT%>%
